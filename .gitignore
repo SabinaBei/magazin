@@ -1,0 +1,6 @@
+venv
+.idea
+idea/workspace.xml
+__pycashe__
+media
+db.sqlite3
