@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sotrudniki</title>
+</head>
+<body>
+    <div><form method="post">
+        <h1>Add sotrudnik</h1>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Add sotrudnik</button>
+    </form></div>
+
+{% for sotrudnik in sotrudniki %}
+    <p>{{ sotrudnik.name }}</p>
+    <p>{{ sotrudnik.surname }}</p>
+    <p>{{ sotrudnik.email }}</p>
+    <p>{{ sotrudnik.telephone }}</p>
+{% endfor %}
+
+</body>
+</html>

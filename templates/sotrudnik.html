@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for sotrudnik in sotrudniki %}
+    <p>{{ sotrudnik.name }}</p>
+    <p>{{ sotrudnik.surname }}</p>
+    <p>{{ sotrudnik.email }}</p>
+    <p>{{ sotrudnik.telephone }}</p>
+{% endfor %}
+</body>
+</html>
