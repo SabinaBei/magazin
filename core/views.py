@@ -82,7 +82,7 @@ class ProductView(ModelViewSet):
     search_fields = ['name', 'description', 'price']
     ordering_fields = ['price', 'name', 'description']
     filterset_class = ProductFilter
-    permission_classes = (ProductPermission)
+    permission_classes = [ProductPermission]
 
     def perform_create(self, serializer):
         serializer.save(user=self.request.user)
